@@ -33,15 +33,31 @@ gem "bcrypt-ruby", "~> 3.1.2"
 
 gem "newrelic_rpm"
 
-gem "passenger"
+gem "passenger" # Best server.
+
+# gem "devise" # User authentication
+
+# gem "sidekiq" # Background jobs
+
+# gem "devise-async" # Setup devise emails to go out async
+
+# gem "carrierwave" # Upload handler
+
+group :development do
+  gem "better_errors" # Awesome error pages
+  gem "binding_of_caller" # Makes better_errors betterer
+  gem "foreman" # Starts servers same as it would in production
+  gem "meta_request" # For Rails Panel for Chrome
+  gem "quiet_assets" # Stop logging assets
+  # gem "letter_opener" # This stops mail from being sent in dev
+end
 
 group :development, :test do
   gem "sqlite3"
 end
 
 group :production do
-  # Heroku magic
-  gem "rails_12factor"
+  gem "rails_12factor" # Heroku magic
 end
 
 # Use Capistrano for deployment
