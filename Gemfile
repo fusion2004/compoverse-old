@@ -43,11 +43,9 @@ gem "bcrypt-ruby", "~> 3.1.2"
 gem "newrelic_rpm"
 
 # Heroku magic
-gem 'rails_12factor', group: :production
+gem "rails_12factor", group: :production
 
-
-# Use unicorn as the app server
-# gem "unicorn"
+gem "passenger"
 
 # Use Capistrano for deployment
 # gem "capistrano", group: :development
