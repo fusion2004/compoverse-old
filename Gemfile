@@ -33,6 +33,8 @@ gem "bcrypt-ruby", "~> 3.1.2"
 
 gem "newrelic_rpm"
 
+gem "foundation-rails"
+
 gem "passenger" # Best server.
 
 # gem "devise" # User authentication
