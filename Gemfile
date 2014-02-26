@@ -62,7 +62,7 @@ group :development, :test do
   gem "rspec-rails", "~> 3.0.0.beta"
   gem "capybara"
   gem "faker"
-  gem "factory_girl"
+  gem "factory_girl_rails"
   gem "sqlite3"
 end
 
