@@ -37,7 +37,11 @@ gem "foundation-rails"
 
 gem "passenger" # Best server.
 
-# gem "devise" # User authentication
+gem "devise" # User authentication
+
+# gem "cancan" # User authorization
+
+# gem "friendly_id", "~> 5.0.0" # Slugs!
 
 # gem "sidekiq" # Background jobs
 
@@ -55,6 +59,9 @@ group :development do
 end
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem "faker"
+  gem "factory_girl"
   gem "sqlite3"
 end
 
