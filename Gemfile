@@ -59,6 +59,8 @@ group :development do
 end
 
 group :development, :test do
+  gem "cucumber-rails", :require => false
+  gem "database_cleaner"
   gem "rspec-rails", "~> 3.0.0.beta"
   gem "capybara"
   gem "faker"
