@@ -2,6 +2,7 @@
 
 ### 1.2.0
 
+- asset_sync installed and configured
 - Footer with versioning info added
 - Gems updated
 
