@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.1.1"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
-gem "rails", "4.0.3"
+gem "rails", "4.0.4"
 
 gem "pg"
 
@@ -14,6 +14,8 @@ gem "uglifier", ">= 1.3.0"
 
 # Use CoffeeScript for .js.coffee assets and views
 gem "coffee-rails", "~> 4.0.0"
+
+gem "asset_sync" # Sync assets to cdn
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem "therubyracer", platforms: :ruby
@@ -37,17 +39,34 @@ gem "foundation-rails"
 
 gem "passenger" # Best server.
 
+# gem "interactor-rails" # Interactors, man
+
 gem "devise" # User authentication
+
+gem "figaro" # Settings
 
 # gem "cancan" # User authorization
 
 # gem "friendly_id", "~> 5.0.0" # Slugs!
 
+# gem "rinku", require: "rails_rinku" # mother-fucking autolink
+
 # gem "sidekiq" # Background jobs
+# gem "sucker_punch" # Possibly free background jobs
 
 # gem "devise-async" # Setup devise emails to go out async
 
 # gem "carrierwave" # Upload handler
+
+gem "fog" # Cloud interaction
+
+# gem "rails-i18n" # Rails I18n
+
+# gem "taglib-ruby" # Taglib ruby wrapper
+
+# gem "gravtastic" # Gravatar
+
+# gem "active_model_serializers" # Dat API tho (json serializer)
 
 group :development do
   gem "better_errors" # Awesome error pages
@@ -59,7 +78,6 @@ group :development do
 end
 
 group :development, :test do
-  gem "cucumber-rails", :require => false
   gem "database_cleaner"
   gem "rspec-rails", "~> 3.0.0.beta"
   gem "capybara"
