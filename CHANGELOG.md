@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.2.3
+
+- installed bugsnag
+
 ### 1.2.2
 
 - git describe doesn't work on heroku, manual app version it is
