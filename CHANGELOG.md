@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.2.5
+
+- unstalled bugsnag
+
 ### 1.2.4
 
 - created url for testing exceptions, installed rollbar
