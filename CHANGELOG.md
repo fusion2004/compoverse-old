@@ -1,8 +1,12 @@
 ## Changelog
 
+### 1.2.6
+
+- removed error route test
+
 ### 1.2.5
 
-- unstalled bugsnag
+- uninstalled bugsnag
 
 ### 1.2.4
 
