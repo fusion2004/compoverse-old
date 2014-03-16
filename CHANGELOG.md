@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.2.1
+
+- changed production to use rackspace asset host
+
 ### 1.2.0
 
 - asset_sync installed and configured

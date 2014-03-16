@@ -55,7 +55,7 @@ Compo::Application.configure do
   # config.cache_store = :mem_cache_store
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-  # config.action_controller.asset_host = "http://assets.example.com"
+  config.action_controller.asset_host = "http://c94138453cefcd6e5862-4bd74cb963010e9ba7b6e0fde7c3a1c5.r5.cf5.rackcdn.com"
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
