@@ -40,6 +40,7 @@ gem "foundation-rails"
 gem "passenger" # Best server.
 
 gem "bugsnag" # Exception notification
+gem "rollbar" # Exception notification
 
 # gem "interactor-rails" # Interactors, man
 
