@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:mattsears/nyan-cat-formatter.git
+  revision: 0d4d696215c8ca84d8b44f7430f474809f02330f
+  specs:
+    nyan-cat-formatter (0.5.2)
+      rspec (>= 2.99.0.beta1, >= 2.14.2, < 4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -155,6 +162,10 @@ GEM
     rake (10.1.1)
     rollbar (0.12.14)
       multi_json (~> 1.3)
+    rspec (3.0.0.beta2)
+      rspec-core (= 3.0.0.beta2)
+      rspec-expectations (= 3.0.0.beta2)
+      rspec-mocks (= 3.0.0.beta2)
     rspec-collection_matchers (0.0.3)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.0.0.beta2)
@@ -232,6 +243,7 @@ DEPENDENCIES
   jquery-rails
   meta_request
   newrelic_rpm
+  nyan-cat-formatter!
   passenger
   pg
   quiet_assets
