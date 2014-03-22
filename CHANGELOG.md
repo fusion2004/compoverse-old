@@ -1,7 +1,8 @@
 ## Changelog
 
-### 1.2.6
+### 1.2.6 ongoing
 
+- added first rspec unit test
 - removed error route test
 
 ### 1.2.5
