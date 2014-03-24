@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.2.14
+
+- debug buildpack
+
 ### 1.2.13
 
 - heroku might be stuck in a temp folder maybe
