@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.2.18
+
+- where is ruby running when that gem compiles
+
 ### 1.2.17
 
 - new version of gem with a proper .inspect
