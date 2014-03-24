@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.2.16
+
+- truly, i need more information
+
 ### 1.2.15
 
 - this... might work
