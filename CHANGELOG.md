@@ -1,5 +1,13 @@
 ## Changelog
 
+### 1.2.10
+
+- please please heroku
+
+### 1.2.9
+
+- please heroku
+
 ### 1.2.8
 
 - correctly marking our branch in gemfile so heroku can read it
