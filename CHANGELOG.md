@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.2.13
+
+- heroku might be stuck in a temp folder maybe
+
 ### 1.2.12
 
 - still attempting to coax heroku
