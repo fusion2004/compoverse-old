@@ -1,51 +1,8 @@
 ## Changelog
 
-### 1.2.18
-
-- where is ruby running when that gem compiles
-
-### 1.2.17
-
-- new version of gem with a proper .inspect
-
-### 1.2.16
-
-- truly, i need more information
-
-### 1.2.15
-
-- this... might work
-
-### 1.2.14
-
-- debug buildpack
-
-### 1.2.13
-
-- heroku might be stuck in a temp folder maybe
-
-### 1.2.12
-
-- still attempting to coax heroku
-
-### 1.2.11
-
-- please please please heroku
-
-### 1.2.10
-
-- please please heroku
-
-### 1.2.9
-
-- please heroku
-
-### 1.2.8
-
-- correctly marking our branch in gemfile so heroku can read it
-
-### 1.2.7
-
+### 1.2.7 - 1.2.19
+get heroku to compile taglib-ruby
+- trying to
 - switching to our branch of taglib-ruby
 
 ### 1.2.6
