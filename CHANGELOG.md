@@ -1,7 +1,8 @@
 ## Changelog
 
-### 1.2.6 ongoing
+### 1.2.6
 
+- installing taglib-ruby, see if heroku explodes
 - added first rspec unit test
 - removed error route test
 

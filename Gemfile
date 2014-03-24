@@ -64,7 +64,7 @@ gem "fog" # Cloud interaction
 
 # gem "rails-i18n" # Rails I18n
 
-# gem "taglib-ruby" # Taglib ruby wrapper
+gem "taglib-ruby" # Taglib ruby wrapper
 
 # gem "gravtastic" # Gravatar
 
