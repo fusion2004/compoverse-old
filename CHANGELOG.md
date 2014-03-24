@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.2.17
+
+- new version of gem with a proper .inspect
+
 ### 1.2.16
 
 - truly, i need more information
