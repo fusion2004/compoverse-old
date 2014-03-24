@@ -1,8 +1,8 @@
 ## Changelog
 
-### 1.2.7 - 1.2.19
-get heroku to compile taglib-ruby
-- trying to
+### 1.2.7 - 1.2.20
+
+- trying to get heroku to compile taglib-ruby
 - switching to our branch of taglib-ruby
 
 ### 1.2.6
