@@ -1,8 +1,14 @@
 ## Changelog
 
+### 1.2.6
+
+- installing taglib-ruby, see if heroku explodes
+- added first rspec unit test
+- removed error route test
+
 ### 1.2.5
 
-- unstalled bugsnag
+- uninstalled bugsnag
 
 ### 1.2.4
 

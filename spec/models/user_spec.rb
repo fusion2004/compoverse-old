@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe User do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "will not allow creation without a username" do
+    user = FactoryGirl.build :user, username: nil
+    expect(user.save).to eq(false)
+  end
 end
