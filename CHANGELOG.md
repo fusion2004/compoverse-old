@@ -1,5 +1,13 @@
 ## Changelog
 
+### 1.2.8
+
+- correctly marking our branch in gemfile so heroku can read it
+
+### 1.2.7
+
+- switching to our branch of taglib-ruby
+
 ### 1.2.6
 
 - installing taglib-ruby, see if heroku explodes
