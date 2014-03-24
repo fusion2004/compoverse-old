@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/fusion2004/taglib-ruby.git
-  revision: bf88155f74c2ab955870a257500a758b03280211
+  revision: 5cffbd82d6c0aa9fdd03173b331cb1671c54a4e3
   specs:
     taglib-ruby (0.6.0)
 
