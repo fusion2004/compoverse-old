@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.2.12
+
+- still attempting to coax heroku
+
 ### 1.2.11
 
 - please please please heroku
