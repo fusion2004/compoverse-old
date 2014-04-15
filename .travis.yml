@@ -2,6 +2,8 @@ language: ruby
 rvm:
 - 2.1.1
 bundler_args: "--without production"
+addons:
+  postgresql: "9.3"
 env:
   matrix:
   - SECRET_KEY_BASE=1a2s3d DEVISE_SECRET_KEY=3f4g5h DEVISE_PEPPER=h678k7l
@@ -14,4 +16,6 @@ notifications:
 before_install:
 - sudo apt-get install -y libtag1-dev
 before_script:
+- cp config/database.yml.travis config/database.yml
+- psql -c 'create database travis_ci_test;' -U postgres
 - bin/rake db:migrate RAILS_ENV=test
