@@ -5,7 +5,7 @@ GIT
     taglib-ruby (0.6.0)
 
 GIT
-  remote: git@github.com:mattsears/nyan-cat-formatter.git
+  remote: git://github.com/mattsears/nyan-cat-formatter.git
   revision: 58c590fdf9c662057afb77636162d377a1e99d0c
   specs:
     nyan-cat-formatter (0.6.0)
