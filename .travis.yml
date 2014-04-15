@@ -1,0 +1,6 @@
+language: ruby
+rvm:
+  - 2.1.1
+  - 2.0.0
+bundler_args: --without production
+env: SECRET_KEY_BASE=1a2s3d DEVISE_SECRET_KEY=3f4g5h DEVISE_PEPPER=h678k7l
