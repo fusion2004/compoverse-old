@@ -2,12 +2,12 @@ source "https://rubygems.org"
 ruby "2.1.1"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
-gem "rails", "4.0.4"
+gem "rails", "4.1.0"
 
 gem "pg"
 
 # Use SCSS for stylesheets
-gem "sass-rails", "~> 4.0.0"
+gem "sass-rails", "~> 4.0.3"
 
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
@@ -27,7 +27,7 @@ gem "jquery-rails"
 gem "turbolinks"
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder", "~> 1.2"
+gem "jbuilder", "~> 2.0"
 
 # Use ActiveModel has_secure_password
 gem "bcrypt"
@@ -94,7 +94,7 @@ group :production do
 end
 
 # Use Capistrano for deployment
-# gem "capistrano", group: :development
+# gem "capistrano-rails", group: :development
 
 # Use debugger
 # gem "debugger", group: [:development, :test]

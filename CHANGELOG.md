@@ -1,5 +1,10 @@
 ## Changelog
 
+### 1.3.0
+
+- change the keys, jim, we're going open source
+- upgrade to rails 4.1
+
 ### 1.2.7 - 1.2.20
 
 - trying to get heroku to compile taglib-ruby
