@@ -80,11 +80,12 @@ end
 group :development, :test do
   gem "database_cleaner"
   gem "rspec-rails", "~> 3.0.0.beta"
-  gem "nyan-cat-formatter", :github => "mattsears/nyan-cat-formatter"
+  # gem "nyan-cat-formatter", :github => "mattsears/nyan-cat-formatter"
   gem "capybara"
   gem "faker"
   gem "factory_girl_rails"
   gem "sqlite3"
+  gem "codeclimate-test-reporter", require: nil
 end
 
 group :production do
