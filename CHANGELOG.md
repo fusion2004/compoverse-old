@@ -1,5 +1,10 @@
 ## Changelog
 
+### 1.3.1
+
+- added a proper readme
+- installed travis config, removed unused gems
+
 ### 1.3.0
 
 - change the keys, jim, we're going open source

@@ -45,8 +45,6 @@ gem "rollbar" # Exception notification
 
 gem "devise" # User authentication
 
-gem "figaro" # Settings
-
 # gem "cancan" # User authorization
 
 # gem "friendly_id", "~> 5.0.0" # Slugs!
@@ -82,11 +80,12 @@ end
 group :development, :test do
   gem "database_cleaner"
   gem "rspec-rails", "~> 3.0.0.beta"
-  gem "nyan-cat-formatter", :git => "git@github.com:mattsears/nyan-cat-formatter.git"
+  # gem "nyan-cat-formatter", :github => "mattsears/nyan-cat-formatter"
   gem "capybara"
   gem "faker"
   gem "factory_girl_rails"
   gem "sqlite3"
+  gem "codeclimate-test-reporter", require: nil
 end
 
 group :production do
