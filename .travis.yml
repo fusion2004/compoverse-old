@@ -13,3 +13,5 @@ notifications:
     secure: D6hsFJBddIl5uRJUAOijc5c4kFQCUvRfueeVNxnDVrSgLxc8Yo/JAYkT6lrWqrflw6YJJsmnwDJPtG5HjAznaihNyfGU2s/6YwfAmDWiICG7yguEm/xdkpUae59nb//g95FU0l3j9OLnqqv5cyHIkkNRn5YjSUyYoQ43qRv+ROU=
 before_install:
 - sudo apt-get install -y libtag1-dev
+before_script:
+- bin/rake db:migrate RAILS_ENV=test
