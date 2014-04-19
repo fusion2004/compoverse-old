@@ -45,7 +45,7 @@ gem "rollbar" # Exception notification
 
 gem "devise" # User authentication
 
-# gem "cancan" # User authorization
+gem "cancancan" # User authorization
 
 # gem "friendly_id", "~> 5.0.0" # Slugs!
 
