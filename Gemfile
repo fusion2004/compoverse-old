@@ -34,6 +34,7 @@ gem "bcrypt"
 gem "bcrypt-ruby", "~> 3.1.2"
 
 gem "newrelic_rpm"
+gem "skylight"
 
 gem "foundation-rails"
 
