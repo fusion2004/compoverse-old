@@ -46,6 +46,9 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
+    byebug (3.1.2)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
     callsite (0.0.11)
     cancancan (1.7.1)
     capybara (2.2.1)
@@ -64,9 +67,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    columnize (0.8.9)
     daemon_controller (1.2.0)
     database_cleaner (1.2.0)
     debug_inspector (0.0.2)
+    debugger-linecache (1.2.0)
     devise (3.2.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -243,6 +248,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.1.2)
   better_errors
   binding_of_caller
+  byebug
   cancancan
   capybara
   codeclimate-test-reporter
