@@ -86,7 +86,7 @@ group :development, :test do
   gem "faker"
   gem "factory_girl_rails"
   gem "sqlite3"
-  gem "codeclimate-test-reporter", require: nil
+  gem "codeclimate-test-reporter", :require => nil
 end
 
 group :production do
