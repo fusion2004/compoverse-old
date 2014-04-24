@@ -6,5 +6,9 @@ FactoryGirl.define do
     email { Faker::Internet.email }
     password "secret_password"
     encrypted_password { User.new.send(:password_digest, "secret_password") }
+
+    factory :admin do
+      admin true
+    end
   end
 end
