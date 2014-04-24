@@ -34,6 +34,7 @@ gem "bcrypt"
 gem "bcrypt-ruby", "~> 3.1.2"
 
 gem "newrelic_rpm"
+gem "skylight"
 
 gem "foundation-rails"
 
@@ -45,7 +46,7 @@ gem "rollbar" # Exception notification
 
 gem "devise" # User authentication
 
-# gem "cancan" # User authorization
+gem "cancancan" # User authorization
 
 # gem "friendly_id", "~> 5.0.0" # Slugs!
 
@@ -81,11 +82,12 @@ group :development, :test do
   gem "database_cleaner"
   gem "rspec-rails", "~> 3.0.0.beta"
   # gem "nyan-cat-formatter", :github => "mattsears/nyan-cat-formatter"
+  gem "byebug"
   gem "capybara"
   gem "faker"
   gem "factory_girl_rails"
   gem "sqlite3"
-  gem "codeclimate-test-reporter", require: nil
+  gem "codeclimate-test-reporter", :require => nil
 end
 
 group :production do
