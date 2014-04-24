@@ -1,5 +1,10 @@
 ## Changelog
 
+### 1.4.0
+
+- admin users and admin dashboard
+- installed skylight, byebug
+
 ### 1.3.1
 
 - added a proper readme
