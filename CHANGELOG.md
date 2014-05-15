@@ -1,5 +1,10 @@
 ## Changelog
 
+### 1.4.1
+
+- updated ruby to 2.1.2, updated rails to 4.1.1
+- enable travis bundler cache
+
 ### 1.4.0
 
 - admin users and admin dashboard
