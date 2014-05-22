@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140521170450) do
+ActiveRecord::Schema.define(version: 20140522164906) do
 
   create_table "compos", force: true do |t|
     t.string   "name"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(version: 20140521170450) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "compos_users", force: true do |t|
+    t.integer "user_id"
+    t.integer "compo_id"
+  end
+
+  add_index "compos_users", ["compo_id"], name: "index_compos_users_on_compo_id"
+  add_index "compos_users", ["user_id"], name: "index_compos_users_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "",    null: false
