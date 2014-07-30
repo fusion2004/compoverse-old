@@ -1,6 +1,7 @@
 GIT
-  remote: git://github.com/fusion2004/taglib-ruby.git
-  revision: 1d0df7dc9c7078cb498b7517dc39924d2a838f45
+  remote: git://github.com/robinst/taglib-ruby.git
+  revision: b38340df0522a686cbfec33988d9cfe557be31fb
+  branch: heroku
   specs:
     taglib-ruby (0.6.0)
 
