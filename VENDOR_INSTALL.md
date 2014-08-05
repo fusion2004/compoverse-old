@@ -34,7 +34,6 @@ cd libsndfile-1.0.25
 ./configure --prefix=/app/vendor/libsndfile
 make
 make install
-DESTDIR=/app/libsndfile make install
 
 cd /app
 curl -O https://s3.amazonaws.com/thasauce_heroku/source/libmad-0.15.1b-fixes-1.tar.gz
@@ -68,8 +67,9 @@ export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$AWF_INCLUDE
 make
 make install
 
+cd /app
 tar czf taglib-vendor-1.9.1.tar.gz vendor/taglib/
-tar czf audiowaveform-vendor-1.0.6.tar.gz vendor/audiowaveform/ vendor/libgd/ vendor/libmad/ vendor/libsndfile/
+tar czf audiowaveform-vendor-1.0.6.tar.gz vendor/audiowaveform/ vendor/libgd/ vendor/libmad/ vendor/libsndfile/ vendor/libboost/
 
 curl https://raw.githubusercontent.com/scottmotte/srvdir-binary/master/srvdir.tar.gz -O -ssl3
 tar -zxvf srvdir.tar.gz
