@@ -4,7 +4,7 @@ ruby "2.1.2"
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
-gem "rails", "4.1.1"
+gem "rails", "4.1.4"
 
 gem "pg"
 
@@ -35,7 +35,7 @@ gem "jbuilder", "~> 2.0"
 gem "bcrypt"
 gem "bcrypt-ruby", "~> 3.1.2"
 
-gem "newrelic_rpm"
+# gem "newrelic_rpm"
 gem "skylight"
 
 gem "foundation-rails"
@@ -73,8 +73,8 @@ gem "taglib-ruby", :github => "robinst/taglib-ruby" # Taglib ruby wrapper
 
 group :development do
   gem "better_errors" # Awesome error pages
-  gem "binding_of_caller" # Makes better_errors betterer
-  gem "foreman" # Starts servers same as it would in production
+  gem "binding_of_caller" # Makes better_errors betterer (REPL)
+  gem "foreman", "0.74.0" # Starts servers same as it would in production
   gem "meta_request" # For Rails Panel for Chrome
   gem "quiet_assets" # Stop logging assets
   # gem "letter_opener" # This stops mail from being sent in dev
@@ -82,7 +82,7 @@ end
 
 group :development, :test do
   gem "database_cleaner"
-  gem "rspec-rails", "~> 3.0.0.beta"
+  gem "rspec-rails"
   # gem "nyan-cat-formatter", :github => "mattsears/nyan-cat-formatter"
   gem "byebug"
   gem "capybara"
