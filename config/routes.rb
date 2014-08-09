@@ -1,4 +1,4 @@
-Compo::Application.routes.draw do
+ThaSauceCompo::Application.routes.draw do
   devise_for :users
   root to: "index#index"
 

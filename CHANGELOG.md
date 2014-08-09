@@ -1,5 +1,15 @@
 ## Changelog
 
+### 1.5.0
+
+- switched to vendored binaries, now installs taglib and audiowaveform from our builds on s3
+- added ability to add and remove organizers from a Compo
+- introduced Compo model, and the ability to create them as an admin
+
+### 1.4.2
+
+- switched to upstream heroku branch of taglib-ruby
+
 ### 1.4.1
 
 - updated ruby to 2.1.2, updated rails to 4.1.1

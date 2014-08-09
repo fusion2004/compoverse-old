@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Compo::Application.load_tasks
+ThaSauceCompo::Application.load_tasks
