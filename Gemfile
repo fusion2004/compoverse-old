@@ -4,7 +4,7 @@ ruby "2.1.2"
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
-gem "rails", "4.1.4"
+gem "rails", "4.1.5"
 
 gem "pg"
 
@@ -65,7 +65,7 @@ gem "fog" # Cloud interaction
 
 # gem "rails-i18n" # Rails I18n
 
-gem "taglib-ruby", :github => "robinst/taglib-ruby" # Taglib ruby wrapper
+gem "taglib-ruby" # Taglib ruby wrapper
 
 # gem "gravtastic" # Gravatar
 
@@ -81,10 +81,12 @@ group :development do
 end
 
 group :development, :test do
+  gem "pry"
+  gem "pry-byebug", "~> 2.0"
   gem "database_cleaner"
   gem "rspec-rails"
   # gem "nyan-cat-formatter", :github => "mattsears/nyan-cat-formatter"
-  gem "byebug"
+  gem "byebug", "~> 3.4"
   gem "capybara"
   gem "faker"
   gem "factory_girl_rails"
