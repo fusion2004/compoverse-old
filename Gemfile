@@ -4,7 +4,7 @@ ruby "2.1.2"
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
-gem "rails", "4.1.4"
+gem "rails", "4.1.5"
 
 gem "pg"
 
@@ -29,7 +29,7 @@ gem "jquery-rails"
 gem "turbolinks"
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder", "~> 2.0"
+# gem "jbuilder", "~> 2.0"
 
 # Use ActiveModel has_secure_password
 gem "bcrypt"
@@ -65,7 +65,7 @@ gem "fog" # Cloud interaction
 
 # gem "rails-i18n" # Rails I18n
 
-gem "taglib-ruby", :github => "robinst/taglib-ruby" # Taglib ruby wrapper
+gem "taglib-ruby" # Taglib ruby wrapper
 
 # gem "gravtastic" # Gravatar
 
@@ -74,17 +74,19 @@ gem "taglib-ruby", :github => "robinst/taglib-ruby" # Taglib ruby wrapper
 group :development do
   gem "better_errors" # Awesome error pages
   gem "binding_of_caller" # Makes better_errors betterer (REPL)
-  gem "foreman", "0.74.0" # Starts servers same as it would in production
+  gem "foreman" # Starts servers same as it would in production
   gem "meta_request" # For Rails Panel for Chrome
   gem "quiet_assets" # Stop logging assets
   # gem "letter_opener" # This stops mail from being sent in dev
 end
 
 group :development, :test do
+  gem "pry"
+  gem "pry-byebug", "~> 2.0"
   gem "database_cleaner"
   gem "rspec-rails"
   # gem "nyan-cat-formatter", :github => "mattsears/nyan-cat-formatter"
-  gem "byebug"
+  gem "byebug", "~> 3.4"
   gem "capybara"
   gem "faker"
   gem "factory_girl_rails"

@@ -35,16 +35,18 @@
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+$row-width: rem-calc(1280);
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
-// $body-font-color: #222;
+$body-bg: #212121;
+$body-font-color: #f2f2f2;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
+
+$content-bg: #424242;
 
 // We use this to control font-smoothing
 // $font-smoothing: antialiased;
@@ -55,9 +57,10 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #c41411;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
+$alert-color: #b0120a;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
@@ -120,7 +123,7 @@
 // $header-font-family: $body-font-family;
 // $header-font-weight: normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #f2f2f2;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -904,13 +907,14 @@
 // We use these to control list styles.
 // $side-nav-list-type: none;
 // $side-nav-list-position: inside;
-// $side-nav-list-margin: rem-calc(0 0 7 0);
+$side-nav-list-margin: 0;
 
 // We use these to control link styles.
-// $side-nav-link-color: $primary-color;
-// $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
-// $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
-// $side-nav-font-size: rem-calc(14);
+$side-nav-link-color: $body-font-color;
+$side-nav-link-color-active: $side-nav-link-color;
+$side-nav-link-color-hover: $side-nav-link-color;
+$side-nav-link-padding: rem-calc(10 20);
+$side-nav-font-size: rem-calc(20);
 // $side-nav-font-weight: normal;
 // $side-nav-font-family: $body-font-family;
 // $side-nav-active-font-family: $side-nav-font-family;
@@ -1130,11 +1134,11 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: #000;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: 45px;
+$topbar-height: 80px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
