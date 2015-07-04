@@ -1,7 +1,7 @@
 language: ruby
 cache: bundler
 rvm:
-- 2.1.2
+- 2.2.2
 bundler_args: "--without production"
 addons:
   postgresql: "9.3"
@@ -9,7 +9,7 @@ env:
   matrix:
   - SECRET_KEY_BASE=1a2s3d DEVISE_SECRET_KEY=3f4g5h DEVISE_PEPPER=h678k7l
   global:
-    secure: SPQMQwcPKzsRXaP3iPW9uPZkDZpEqLQVYWR+wcNi1DCGAOn2LloQuVoSZeklvVwTOCB7eIRnHgok8uNKjo1sV9Z/ZIJoMD6OxiU8rAxYlS0SuQ/UNWdtohrwwLViD/Zd1yLn4qyJ86LdzruUMJMTykBd+U97489G+/U1qKVOGt0=
+    secure: "JQhCSKHogIIDuAd3lESZPK1lQLHkoB3MpmrRajG8cWU31HfXxBqgdpsb6R6Aa2vegwOZpBkbKu4ey4gSPzzZxhF1LAmh7Jm9hqdCiKx7MXq5CU8EfPfcxld56CIK7x0wZoyxbyyHQ2cj23xsceu10KemyPbUO/0BOyXGmUupruA="
 script: bundle exec rspec
 before_install:
 - sudo apt-get install -y libtag1-dev
