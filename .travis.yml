@@ -11,9 +11,6 @@ env:
   global:
     secure: SPQMQwcPKzsRXaP3iPW9uPZkDZpEqLQVYWR+wcNi1DCGAOn2LloQuVoSZeklvVwTOCB7eIRnHgok8uNKjo1sV9Z/ZIJoMD6OxiU8rAxYlS0SuQ/UNWdtohrwwLViD/Zd1yLn4qyJ86LdzruUMJMTykBd+U97489G+/U1qKVOGt0=
 script: bundle exec rspec
-notifications:
-  flowdock:
-    secure: D6hsFJBddIl5uRJUAOijc5c4kFQCUvRfueeVNxnDVrSgLxc8Yo/JAYkT6lrWqrflw6YJJsmnwDJPtG5HjAznaihNyfGU2s/6YwfAmDWiICG7yguEm/xdkpUae59nb//g95FU0l3j9OLnqqv5cyHIkkNRn5YjSUyYoQ43qRv+ROU=
 before_install:
 - sudo apt-get install -y libtag1-dev
 before_script:
