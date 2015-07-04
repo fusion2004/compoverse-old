@@ -29,10 +29,10 @@
         <ul class="right">
           <% if user_signed_in? %>
             <li><%= link_to current_user.email, root_path %></li>
-            <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
           <% else %>
-            <li><%= link_to('Log In', new_user_session_path) %> </li>
-            <li class="active"><%= link_to('Sign Up', new_user_registration_path) %></li>
+            <li><%= link_to('Sign In', new_user_session_path) %> </li>
+            <li class="active"><%= link_to('Create Account', new_user_registration_path) %></li>
           <% end %>
         </ul>
 
@@ -43,13 +43,7 @@
       </section>
     </nav>
 
-    <div class="top">
-      <img class="blur" src="<%= image_path("banner_bg.png") %>" />
-      <div class="titles">
-        <h1 class="title">COMPO</h1>
-        <h2 class="motto">Create. Learn. Compete.</h2>
-      </div>
-    </div>
+    <%= render 'shared/hero' %>
 
     <div class="medium-3 columns sidebar">
       <ul class="side-nav">
