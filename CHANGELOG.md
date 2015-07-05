@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.7.0
+- fix foundation, everything was broken until regenerating the overrides and settings file
+- routes and initial template for rounds show
+
 ### 1.6.0
 - updated to rails 4.2
 - updated basically every gem in the project
