@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby "2.2.2"
 
-gem 'dotenv-rails', :groups => [:development, :test]
+gem "dotenv-rails", groups: [:development, :test]
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails", "4.2.3"
@@ -78,16 +78,15 @@ end
 
 group :development, :test do
   gem "pry"
-  gem "pry-byebug", "~> 2.0"
+  gem "pry-byebug"
   gem "database_cleaner"
   gem "rspec-rails"
   # gem "nyan-cat-formatter", :github => "mattsears/nyan-cat-formatter"
-  gem "byebug", "~> 3.4"
+  gem "byebug"
   gem "capybara"
   gem "faker"
   gem "factory_girl_rails"
-  gem "sqlite3"
-  gem "codeclimate-test-reporter", :require => nil
+  gem "codeclimate-test-reporter", require: nil
 end
 
 group :production do
