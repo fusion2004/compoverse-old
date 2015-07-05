@@ -28,6 +28,11 @@
       font-size: rem-calc(100);
       font-weight: 900;
       text-transform: uppercase;
+
+      &.round {
+        font-size: rem-calc(50);
+        font-weight: 400;
+      }
     }
   }
 }
