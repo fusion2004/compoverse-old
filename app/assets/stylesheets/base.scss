@@ -1,0 +1,55 @@
+
+@import "foundation_and_overrides";
+
+.main {
+  background: #000;
+}
+
+.sidebar {
+  padding: 0;
+}
+
+.content {
+  background: $content-bg;
+}
+
+.top {
+  position: relative;
+  text-align: center;
+
+  .titles {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+
+    .title {
+      font-size: rem-calc(100);
+      font-weight: 900;
+    }
+  }
+}
+
+.top-bar {
+  .name {
+    background: $primary-color;
+  }
+}
+
+.side-nav {
+  li {
+    a, a:not(.button) {
+      text-align: center;
+
+      &:hover, &:focus {
+        background: $body-bg;
+      }
+    }
+
+    &.active > a:first-child {
+      border-left: 2px solid $primary-color;
+      background: $body-bg;
+    }
+  }
+}

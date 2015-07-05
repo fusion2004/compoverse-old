@@ -1,19 +1,21 @@
 source "https://rubygems.org"
-ruby "2.1.2"
+ruby "2.2.2"
+
+gem "dotenv-rails", groups: [:development, :test]
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
-gem "rails", "4.1.1"
+gem "rails", "4.2.3"
 
 gem "pg"
 
 # Use SCSS for stylesheets
-gem "sass-rails", "~> 4.0.3"
+gem "sass-rails"
 
 # Use Uglifier as compressor for JavaScript assets
 gem "uglifier", ">= 1.3.0"
 
 # Use CoffeeScript for .js.coffee assets and views
-gem "coffee-rails", "~> 4.0.0"
+# gem "coffee-rails", "~> 4.0.0"
 
 gem "asset_sync" # Sync assets to cdn
 
@@ -24,16 +26,12 @@ gem "asset_sync" # Sync assets to cdn
 gem "jquery-rails"
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem "turbolinks"
+# gem "turbolinks"
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder", "~> 2.0"
+# gem "jbuilder", "~> 2.0"
 
-# Use ActiveModel has_secure_password
-gem "bcrypt"
-gem "bcrypt-ruby", "~> 3.1.2"
-
-gem "newrelic_rpm"
+# gem "newrelic_rpm"
 gem "skylight"
 
 gem "foundation-rails"
@@ -59,11 +57,11 @@ gem "cancancan" # User authorization
 
 # gem "carrierwave" # Upload handler
 
-gem "fog" # Cloud interaction
+# gem "fog" # Cloud interaction
 
 # gem "rails-i18n" # Rails I18n
 
-gem "taglib-ruby", :github => "robinst/taglib-ruby", :branch => "heroku" # Taglib ruby wrapper
+gem "taglib-ruby" # Taglib ruby wrapper
 
 # gem "gravtastic" # Gravatar
 
@@ -71,7 +69,7 @@ gem "taglib-ruby", :github => "robinst/taglib-ruby", :branch => "heroku" # Tagli
 
 group :development do
   gem "better_errors" # Awesome error pages
-  gem "binding_of_caller" # Makes better_errors betterer
+  gem "binding_of_caller" # Makes better_errors betterer (REPL)
   gem "foreman" # Starts servers same as it would in production
   gem "meta_request" # For Rails Panel for Chrome
   gem "quiet_assets" # Stop logging assets
@@ -79,15 +77,16 @@ group :development do
 end
 
 group :development, :test do
+  gem "pry"
+  gem "pry-byebug"
   gem "database_cleaner"
-  gem "rspec-rails", "~> 3.0.0.beta"
+  gem "rspec-rails"
   # gem "nyan-cat-formatter", :github => "mattsears/nyan-cat-formatter"
   gem "byebug"
   gem "capybara"
   gem "faker"
   gem "factory_girl_rails"
-  gem "sqlite3"
-  gem "codeclimate-test-reporter", :require => nil
+  gem "codeclimate-test-reporter", require: nil
 end
 
 group :production do

@@ -1,7 +1,7 @@
 # Load the Rails application.
 require File.expand_path('../application', __FILE__)
 
-# Initialize the Rails application.
-Compo::Application.initialize!
+APP_VERSION = "1.6.0" unless defined? APP_VERSION
 
-APP_VERSION = "1.4.1" unless defined? APP_VERSION
+# Initialize the Rails application.
+Rails.application.initialize!
