@@ -14,12 +14,14 @@
 }
 
 .top {
-  position: relative;
   text-align: center;
+  height: 350px;
+
+  .row .columns { position: relative; }
 
   .titles {
     position: absolute;
-    top: 20%;
+    top: 100px;
     width: 100%;
     text-align: center;
     text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
@@ -31,7 +33,14 @@
 
       &.round {
         font-size: rem-calc(50);
-        font-weight: 400;
+        font-weight: 200;
+        text-align: left;
+      }
+    }
+
+    .motto {
+      &.round {
+        text-align: left;
       }
     }
   }
