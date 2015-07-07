@@ -4,7 +4,7 @@ rvm:
 - 2.2.2
 bundler_args: "--without production"
 addons:
-  postgresql: "9.3"
+  postgresql: "9.4"
 env:
   matrix:
   - SECRET_KEY_BASE=1a2s3d DEVISE_SECRET_KEY=3f4g5h DEVISE_PEPPER=h678k7l
