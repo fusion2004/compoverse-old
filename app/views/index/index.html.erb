@@ -1,9 +1,33 @@
 <% content_for :hero do %>
-  <img class="blur" src="<%= image_path("banner_bg.png") %>" />
-  <div class="titles">
-    <h1 class="title">Compoverse</h1>
-    <h2 class="motto">Create. Learn. Compete.</h2>
+  <div class="top" style="background-image: url('<%= image_path("banner_bg.png") %>')">
+    <div class="titles">
+      <h1 class="title">Compoverse</h1>
+      <h2 class="motto">Create. Learn. Compete.</h2>
+    </div>
   </div>
 <% end %>
 
-<h1>Welcome to the real world, Neo.</h1>
+<div class="row">
+  <div class="medium-4 columns">
+    <h2>Create.</h2>
+    <p>Compo makes it easy for you to set time aside to create.  Every compo
+    runs on a specific schedule, and there are multiple compo styles and
+    schedules to meet your needs. Compo times range anywhere from
+    onemonth to one hour.</p>
+  </div>
+
+  <div class="medium-4 columns">
+    <h2>Learn.</h2>
+    <p>The goal of Compo is a create a community environment for users to
+    grow and learn. Often compos provide users with specific limitations
+    or time restraints that encourage users to develop a more
+    streamlined workflow.</p>
+  </div>
+
+  <div class="medium-4 columns">
+    <h2>Compete.</h2>
+    <p>Honest feedback is one of the hardest things to find for most artists.
+    Many compos use user voting to provide friendly competition and to
+    provide feedback for participants.</p>
+  </div>
+</div>
