@@ -1,0 +1,42 @@
+<% content_for :hero do %>
+  <div class="top" style="background-image: url('<%= image_path("banner_bg.png") %>')">
+    <div class="titles">
+      <h1 class="title">Add a New Compo</h1>
+      <h2 class="motto"></h2>
+    </div>
+  </div>
+<% end %>
+
+<form>
+  <div class="row">
+    <div class="medium-3 columns">
+      <label>&nbsp;
+        <input type="text" placeholder="Compo ID" />
+      </label>
+    </div>
+
+    <div class="medium-9 columns">
+      <label>&nbsp;
+        <input type="text" placeholder="Compo Name" />
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-12 columns">
+      <label>Voting Style</label>
+      <input type="radio" name="votes" value="none" id="votesNone"><label for="votesNone">None</label>
+      <input type="radio" name="votes" value="top3" id="votesTop3"><label for="votesTop3">Top 3</label>
+      <input type="radio" name="votes" value="points" id="votesPoints"><label for="votesPoints">Points</label>
+      <input type="radio" name="votes" value="upvotes" id="votesUp"><label for="votesUp">Up Votes</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-12 columns">
+      <label>&nbsp;
+        <textarea placeholder="Description"></textarea>
+      </label>
+    </div>
+  </div>
+</form>

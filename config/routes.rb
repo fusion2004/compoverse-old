@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   resources :rounds, only: :show
 
+  resources :compos, only: :new
+
   root to: "index#index"
 
   namespace :admin do
