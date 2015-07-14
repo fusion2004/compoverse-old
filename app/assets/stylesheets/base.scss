@@ -53,6 +53,33 @@ $content-bg: #424242;
   }
 }
 
+.compo-status {
+  font-size: 1.25em;
+  position: relative; top: 25px;
+}
+
+.compo-progress {
+  margin: 10px auto;
+  height: 200px; width: 200px;
+  border-radius: 100px;
+  position: relative; top: 30px;
+  background: $primary-color;
+
+  .compo-progress-content {
+    position: relative;
+    top: 12px;
+    margin: 0 auto;
+    height: 176px; width: 176px;
+    border-radius: 88px;
+    background: $body-bg;
+
+    span {
+      position: relative; top: 55px;
+      font-size: 2.5em
+    }
+  }
+}
+
 .side-nav {
   li {
     a, a:not(.button) {
