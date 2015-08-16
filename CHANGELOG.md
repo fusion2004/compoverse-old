@@ -1,6 +1,6 @@
 ## Changelog
 
-### 1.8.0
+### next
 - updated rspec, byebug, passenger, and rollbar to latest
 
 ### 1.7.1
