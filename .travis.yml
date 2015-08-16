@@ -1,3 +1,4 @@
+sudo: false
 language: ruby
 cache: bundler
 rvm:
@@ -5,14 +6,15 @@ rvm:
 bundler_args: "--without production"
 addons:
   postgresql: "9.4"
+  apt:
+    packages:
+    - libtag1-dev
 env:
   matrix:
   - SECRET_KEY_BASE=1a2s3d DEVISE_SECRET_KEY=3f4g5h DEVISE_PEPPER=h678k7l
   global:
     secure: "JQhCSKHogIIDuAd3lESZPK1lQLHkoB3MpmrRajG8cWU31HfXxBqgdpsb6R6Aa2vegwOZpBkbKu4ey4gSPzzZxhF1LAmh7Jm9hqdCiKx7MXq5CU8EfPfcxld56CIK7x0wZoyxbyyHQ2cj23xsceu10KemyPbUO/0BOyXGmUupruA="
 script: bundle exec rspec
-before_install:
-- sudo apt-get install -y libtag1-dev
 before_script:
 - cp config/database.yml.travis config/database.yml
 - psql -c 'create database travis_ci_test;' -U postgres

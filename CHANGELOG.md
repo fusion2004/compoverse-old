@@ -1,5 +1,11 @@
 ## Changelog
 
+### 1.8.0
+- updated rspec, byebug, passenger, and rollbar to latest
+
+### 1.7.1
+- switch travis ci builds to use the new docker infrastructure
+
 ### 1.7.0
 - fix foundation, everything was broken until regenerating the overrides and settings file
 - routes and initial template for rounds show
