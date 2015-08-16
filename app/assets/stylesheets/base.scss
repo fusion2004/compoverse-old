@@ -15,12 +15,14 @@ $content-bg: #424242;
 }
 
 .top {
-  position: relative;
   text-align: center;
+  height: 350px;
+
+  .row .columns { position: relative; }
 
   .titles {
     position: absolute;
-    top: 20%;
+    top: 100px;
     width: 100%;
     text-align: center;
     text-shadow: 1px 1px 7px rgba(0,0,0,0.5);
@@ -32,7 +34,14 @@ $content-bg: #424242;
 
       &.round {
         font-size: rem-calc(50);
-        font-weight: 400;
+        font-weight: 200;
+        text-align: left;
+      }
+    }
+
+    .motto {
+      &.round {
+        text-align: left;
       }
     }
   }
@@ -41,6 +50,33 @@ $content-bg: #424242;
 .top-bar {
   .name {
     background: $primary-color;
+  }
+}
+
+.compo-status {
+  font-size: 1.25em;
+  position: relative; top: 25px;
+}
+
+.compo-progress {
+  margin: 10px auto;
+  height: 200px; width: 200px;
+  border-radius: 100px;
+  position: relative; top: 30px;
+  background: $primary-color;
+
+  .compo-progress-content {
+    position: relative;
+    top: 12px;
+    margin: 0 auto;
+    height: 176px; width: 176px;
+    border-radius: 88px;
+    background: $body-bg;
+
+    span {
+      position: relative; top: 55px;
+      font-size: 2.5em
+    }
   }
 }
 
