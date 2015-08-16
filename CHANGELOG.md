@@ -1,7 +1,7 @@
 ## Changelog
 
 ### next
-- updated rspec, byebug, passenger, and rollbar to latest
+- updated all gems to latest
 
 ### 1.7.1
 - switch travis ci builds to use the new docker infrastructure
