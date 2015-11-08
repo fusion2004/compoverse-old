@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.2.2"
+ruby "2.2.3"
 
 gem "dotenv-rails", groups: [:development, :test]
 
@@ -46,7 +46,9 @@ gem "devise" # User authentication
 
 gem "cancancan" # User authorization
 
-# gem "friendly_id", "~> 5.0.0" # Slugs!
+gem "simple_form"
+
+gem "friendly_id"
 
 # gem "rinku", require: "rails_rinku" # mother-fucking autolink
 

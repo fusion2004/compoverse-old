@@ -2,6 +2,7 @@
 
 ### next
 - updated all gems to latest
+- updated ruby 2.2.3
 
 ### 1.7.1
 - switch travis ci builds to use the new docker infrastructure
