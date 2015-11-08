@@ -4,7 +4,7 @@ ruby "2.2.3"
 gem "dotenv-rails", groups: [:development, :test]
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
-gem "rails", "4.2.3"
+gem "rails", "4.2.4"
 
 gem "pg"
 
@@ -50,6 +50,8 @@ gem "simple_form"
 
 gem "friendly_id"
 
+gem "pry-rails"
+
 # gem "rinku", require: "rails_rinku" # mother-fucking autolink
 
 # gem "sidekiq" # Background jobs
@@ -79,7 +81,6 @@ group :development do
 end
 
 group :development, :test do
-  gem "pry"
   gem "pry-byebug"
   gem "database_cleaner"
   gem "rspec-rails"
